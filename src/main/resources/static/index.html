@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Server Status Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Server Status Checker</h1>
+    <div>
+        <h2>Request Count: <span id="request-count">0</span></h2>
+        <button onclick="resetRequestCount()">Reset Count</button>
+    </div>
+    <div>
+        <h2>Add Server</h2>
+        <input id="server-name" type="text" placeholder="Server name">
+        <button onclick="addServer()">Add</button>
+    </div>
+    <div>
+        <h2>Check Status</h2>
+        <input id="status-url" type="text" placeholder="Server URL">
+        <button onclick="addStatus()">Check</button>
+    </div>
+    <div>
+        <h2>Servers</h2>
+        <ul id="servers-list"></ul>
+    </div>
+    <div>
+        <h2>Statuses</h2>
+        <ul id="statuses-list"></ul>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
